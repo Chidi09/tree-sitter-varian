@@ -1,0 +1,26 @@
+==================
+String interpolation
+==================
+
+let name = "Varian"
+let v = 1
+print("Hello, {name} v{v}.0")
+
+---
+
+(source_file
+  (statement
+    (let_declaration
+      (identifier)
+      (string)))
+  (statement
+    (let_declaration
+      (identifier)
+      (number)))
+  (statement
+    (expression_statement
+      (call_expression
+        (identifier)
+        (interpolated_string
+          (identifier)
+          (identifier))))))

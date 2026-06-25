@@ -1,0 +1,12 @@
+node_modules/
+build/
+*.o
+*.obj
+*.lib
+*.exp
+*.pdb
+*.wasm
+*.dll
+*.so
+*.dylib
+.DS_Store

@@ -1,0 +1,43 @@
+==================
+Function definitions
+==================
+
+fn add(a: int, b: int) -> int {
+    return a + b
+}
+
+fn square(x) => x * x
+
+pub async fn fetch(url) -> Response { }
+
+---
+
+(source_file
+  (function_definition
+    (identifier)
+    (parameter
+      (identifier)
+      (primitive_type))
+    (parameter
+      (identifier)
+      (primitive_type))
+    (primitive_type)
+    (block
+      (statement
+        (return_statement
+          (binary_expression
+            (identifier)
+            (identifier))))))
+  (function_definition
+    (identifier)
+    (parameter
+      (identifier))
+    (binary_expression
+      (identifier)
+      (identifier)))
+  (function_definition
+    (identifier)
+    (parameter
+      (identifier))
+    (type_identifier)
+    (block)))

@@ -1,0 +1,45 @@
+==================
+Actor
+==================
+
+actor Counter {
+    count: int = 0,
+
+    fn tick(self) {
+        self.count = self.count + 1
+    }
+}
+
+let c = Counter.spawn()
+c.tick()
+
+---
+
+(source_file
+  (actor_definition
+    (identifier)
+    (function_definition
+      (identifier)
+      (parameter
+        (identifier))
+      (block
+        (statement
+          (assignment_statement
+            (member_expression
+              (identifier)
+              (identifier))
+            (binary_expression
+              (member_expression
+                (identifier)
+                (identifier))
+              (number)))))))
+  (statement
+    (let_declaration
+      (identifier)
+      (call_expression
+        (identifier)
+        (identifier))))
+  (statement
+    (expression_statement
+      (call_expression
+        (identifier)))))

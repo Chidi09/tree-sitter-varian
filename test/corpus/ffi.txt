@@ -1,0 +1,18 @@
+==================
+FFI declaration
+==================
+
+@ffi("sqlite3", "sqlite3_open")
+fn sqlite_open(path: string) -> ptr
+
+---
+
+(source_file
+  (ffi_declaration
+    (string)
+    (string)
+    (identifier)
+    (parameter
+      (identifier)
+      (primitive_type))
+    (primitive_type)))

@@ -1,0 +1,65 @@
+==================
+Struct with methods
+==================
+
+struct Point {
+    x: int,
+    y: int
+}
+
+impl Point {
+    fn new(x: int, y: int) -> Point {
+        return Point { x: x, y: y }
+    }
+
+    fn area(self) -> int {
+        return self.x * self.y
+    }
+}
+
+---
+
+(source_file
+  (struct_definition
+    (type_identifier)
+    (struct_field
+      (identifier)
+      (primitive_type))
+    (struct_field
+      (identifier)
+      (primitive_type)))
+  (impl_block
+    (type_identifier)
+    (function_definition
+      (identifier)
+      (parameter
+        (identifier)
+        (primitive_type))
+      (parameter
+        (identifier)
+        (primitive_type))
+      (type_identifier)
+      (block
+        (statement
+          (return_statement
+            (struct_literal
+              (type_identifier)
+              (identifier)
+              (identifier)
+              (identifier)
+              (identifier))))))
+    (function_definition
+      (identifier)
+      (parameter
+        (identifier))
+      (primitive_type)
+      (block
+        (statement
+          (return_statement
+            (binary_expression
+              (member_expression
+                (identifier)
+                (identifier))
+              (member_expression
+                (identifier)
+                (identifier))))))))

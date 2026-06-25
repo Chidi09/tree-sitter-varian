@@ -1,0 +1,52 @@
+{
+  "name": "tree-sitter-varian",
+  "version": "0.1.0",
+  "description": "Varian grammar for tree-sitter",
+  "repository": "https://github.com/Chidi09/tree-sitter-varian",
+  "license": "MIT",
+  "main": "bindings/node",
+  "types": "bindings/node",
+  "keywords": [
+    "parser",
+    "tree-sitter",
+    "varian"
+  ],
+  "files": [
+    "grammar.js",
+    "binding.gyp",
+    "prebuilds/**",
+    "bindings/node/*",
+    "queries/*",
+    "src/**"
+  ],
+  "dependencies": {
+    "node-addon-api": "^7.1.0",
+    "node-gyp-build": "^4.8.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.22.6"
+  },
+  "peerDependencies": {
+    "tree-sitter": "^0.21.0"
+  },
+  "peerDependenciesMeta": {
+    "tree-sitter": {
+      "optional": true
+    }
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.varian",
+      "file-types": [
+        "vn",
+        "vhtml",
+        "lumen"
+      ],
+      "highlights": "queries/highlights.scm"
+    }
+  ],
+  "scripts": {
+    "build": "tree-sitter generate",
+    "test": "tree-sitter test"
+  }
+}

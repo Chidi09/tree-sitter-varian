@@ -1,0 +1,29 @@
+==================
+Let and const
+==================
+
+let x = 10
+let y, z = 20
+const NAME = "varian"
+mut count = 0
+
+---
+
+(source_file
+  (statement
+    (let_declaration
+      (identifier)
+      (number)))
+  (statement
+    (let_declaration
+      (identifier)
+      (identifier)
+      (number)))
+  (statement
+    (const_declaration
+      (identifier)
+      (string)))
+  (statement
+    (mut_declaration
+      (identifier)
+      (number)))

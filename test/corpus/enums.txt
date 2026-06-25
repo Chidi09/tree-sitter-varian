@@ -1,0 +1,50 @@
+==================
+Enum with match
+==================
+
+enum Option {
+    Some(int),
+    None
+}
+
+let x = Option::Some(42)
+
+match x {
+    Option::Some(v) => print(v),
+    Option::None => print(0)
+}
+
+---
+
+(source_file
+  (enum_definition
+    (type_identifier)
+    (enum_variant
+      (identifier)
+      (primitive_type))
+    (enum_variant
+      (identifier)))
+  (statement
+    (let_declaration
+      (identifier)
+      (enum_literal
+        (type_identifier)
+        (identifier)
+        (number))))
+  (statement
+    (match_expression
+      (identifier)
+      (match_arm
+        (enum_literal
+          (type_identifier)
+          (identifier))
+        (call_expression
+          (identifier)
+          (identifier)))
+      (match_arm
+        (enum_literal
+          (type_identifier)
+          (identifier))
+        (call_expression
+          (identifier)
+          (number))))))

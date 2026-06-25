@@ -1,0 +1,14 @@
+==================
+Hello world
+==================
+
+print("Hello, World!")
+
+---
+
+(source_file
+  (statement
+    (expression_statement
+      (call_expression
+        (identifier)
+        (string)))))

@@ -1,0 +1,39 @@
+==================
+Try/catch and throw
+==================
+
+fn safe() {
+    try {
+        throw("error!")
+    } catch e {
+        print(e)
+    }
+}
+
+let x = maybe()?
+
+---
+
+(source_file
+  (function_definition
+    (identifier)
+    (block
+      (statement
+        (try_expression
+          (block
+            (statement
+              (throw_statement
+                (string))))
+          (identifier)
+          (block
+            (statement
+              (expression_statement
+                (call_expression
+                  (identifier)
+                  (identifier)))))))))
+  (statement
+    (let_declaration
+      (identifier)
+      (propagate_expression
+        (call_expression
+          (identifier))))))
