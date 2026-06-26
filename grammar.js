@@ -107,7 +107,7 @@ module.exports = grammar({
     let_declaration: ($) =>
       seq(
         "let",
-        commaSep1(choice($.identifier, "_")),
+        field("name", choice($.identifier, "_")),
         optional(seq(":", $._type)),
         optional(seq("=", $._expression)),
         optional(";"),
@@ -116,7 +116,7 @@ module.exports = grammar({
     const_declaration: ($) =>
       seq(
         "const",
-        $.identifier,
+        field("name", $.identifier),
         optional(seq(":", $._type)),
         "=",
         $._expression,
@@ -126,7 +126,7 @@ module.exports = grammar({
     mut_declaration: ($) =>
       seq(
         "mut",
-        $.identifier,
+        field("name", $.identifier),
         optional(seq(":", $._type)),
         optional(seq("=", $._expression)),
         optional(";"),
@@ -202,7 +202,7 @@ module.exports = grammar({
         repeat($.decorator),
         optional("pub"),
         "fn",
-        $.identifier,
+        field("name", $.identifier),
         optional($.generic_parameters),
         "(",
         commaSep($.parameter),
@@ -222,7 +222,8 @@ module.exports = grammar({
         $.block,
       ),
 
-    parameter: ($) => seq($.identifier, optional(seq(":", $._type))),
+    parameter: ($) =>
+      seq(field("name", $.identifier), optional(seq(":", $._type))),
 
     generic_parameters: ($) => seq("<", commaSep1($.type_identifier), ">"),
 
@@ -234,7 +235,7 @@ module.exports = grammar({
         repeat($.decorator),
         optional("pub"),
         "struct",
-        $.type_identifier,
+        field("name", $.type_identifier),
         optional($.generic_parameters),
         "{",
         commaSep($.struct_field),
@@ -244,7 +245,7 @@ module.exports = grammar({
     struct_field: ($) =>
       seq(
         repeat($.field_decorator),
-        $.identifier,
+        field("name", $.identifier),
         optional(seq(":", $._type)),
         optional(seq("=", $._expression)),
       ),
@@ -258,7 +259,7 @@ module.exports = grammar({
     enum_definition: ($) =>
       seq(
         "enum",
-        $.type_identifier,
+        field("name", $.type_identifier),
         optional($.generic_parameters),
         "{",
         commaSep($.enum_variant),
@@ -266,7 +267,10 @@ module.exports = grammar({
       ),
 
     enum_variant: ($) =>
-      seq($.identifier, optional(seq("(", commaSep1($._type), ")"))),
+      seq(
+        field("name", $.identifier),
+        optional(seq("(", commaSep1($._type), ")")),
+      ),
 
     // ───────────────────────────────────────────────
     // Actor definition
@@ -274,7 +278,7 @@ module.exports = grammar({
     actor_definition: ($) =>
       seq(
         "actor",
-        $.identifier,
+        field("name", $.identifier),
         "{",
         repeat(
           choice(
@@ -296,7 +300,7 @@ module.exports = grammar({
     trait_definition: ($) =>
       seq(
         "trait",
-        $.type_identifier,
+        field("name", $.type_identifier),
         "{",
         repeat(
           seq(
@@ -319,7 +323,7 @@ module.exports = grammar({
     impl_block: ($) =>
       seq(
         "impl",
-        $._type,
+        field("type", $._type),
         "{",
         repeat(
           seq(
@@ -500,7 +504,7 @@ module.exports = grammar({
 
     struct_literal: ($) =>
       seq(
-        $.type_identifier,
+        field("type", $.type_identifier),
         "{",
         commaSep(seq($.identifier, ":", $._expression)),
         optional(","),
@@ -509,9 +513,9 @@ module.exports = grammar({
 
     enum_literal: ($) =>
       seq(
-        $.type_identifier,
+        field("type", $.type_identifier),
         "::",
-        $.identifier,
+        field("variant", $.identifier),
         optional(seq("(", commaSep($._expression), ")")),
       ),
 
@@ -578,13 +582,16 @@ module.exports = grammar({
       prec(
         14,
         seq(
-          choice(
-            $.identifier,
-            $.member_expression,
-            $.enum_literal,
-            $.index_expression,
-            $.call_expression,
-            $.paren_expression,
+          field(
+            "function",
+            choice(
+              $.identifier,
+              $.member_expression,
+              $.enum_literal,
+              $.index_expression,
+              $.call_expression,
+              $.paren_expression,
+            ),
           ),
           "(",
           commaSep(choice($._expression, $.named_argument)),
@@ -605,7 +612,7 @@ module.exports = grammar({
             $.paren_expression,
           ),
           ".",
-          $.identifier,
+          field("property", $.identifier),
         ),
       ),
 

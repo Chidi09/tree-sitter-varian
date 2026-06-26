@@ -34,17 +34,6 @@
       "optional": true
     }
   },
-  "tree-sitter": [
-    {
-      "scope": "source.varian",
-      "file-types": [
-        "vn",
-        "vhtml",
-        "lumen"
-      ],
-      "highlights": "queries/highlights.scm"
-    }
-  ],
   "scripts": {
     "build": "tree-sitter generate",
     "test": "tree-sitter test"
