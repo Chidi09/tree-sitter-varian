@@ -65,6 +65,7 @@ module.exports = grammar({
     // ───────────────────────────────────────────────
     _declaration: ($) =>
       choice(
+        $.use_statement,
         $.function_definition,
         $.struct_definition,
         $.enum_definition,
@@ -189,7 +190,7 @@ module.exports = grammar({
     comptime_block: ($) => seq("comptime", choice($.block, $._expression)),
 
     // ─── Use ─────────────────────────────────────
-    use_statement: ($) => seq("use", $.string, ";"),
+    use_statement: ($) => seq("use", $.string, optional(";")),
 
     // ─── Test ────────────────────────────────────
     test_definition: ($) => seq("test", $.string, $.block),
@@ -201,6 +202,7 @@ module.exports = grammar({
       seq(
         repeat($.decorator),
         optional("pub"),
+        optional("async"),
         "fn",
         field("name", $.identifier),
         optional($.generic_parameters),
@@ -213,6 +215,7 @@ module.exports = grammar({
 
     anonymous_function: ($) =>
       seq(
+        optional("async"),
         "fn",
         optional($.generic_parameters),
         "(",
@@ -429,6 +432,7 @@ module.exports = grammar({
         $.lambda_expression,
         $.anonymous_function,
         $.unary_expression,
+        $.await_expression,
         $.propagate_expression,
         $.optional_chain,
         $.nil_coalescing_expression,
@@ -533,6 +537,9 @@ module.exports = grammar({
     // ─── Unary ─────────────────────────────────
     unary_expression: ($) =>
       prec(11, seq(choice("!", "not", "-", "~"), $._expression)),
+
+    // ─── Await (prefix) ────────────────────────
+    await_expression: ($) => prec.right(11, seq("await", $._expression)),
 
     // ─── Propagate (postfix ?) ─────────────────
     propagate_expression: ($) => prec(12, seq($._expression, "?")),
