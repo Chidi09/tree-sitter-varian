@@ -63,6 +63,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -96,6 +100,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -140,6 +148,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -269,6 +281,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -290,6 +306,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -330,6 +350,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -408,6 +432,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -437,6 +465,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -481,6 +513,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -563,6 +599,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -584,6 +624,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -624,6 +668,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -698,6 +746,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -719,6 +771,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -759,6 +815,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -833,6 +893,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -854,6 +918,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -894,6 +962,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -968,6 +1040,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -989,6 +1065,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -1029,6 +1109,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -1123,6 +1207,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -1144,6 +1232,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -1187,6 +1279,10 @@
           "named": true
         },
         {
+          "type": "self",
+          "named": true
+        },
+        {
           "type": "single_quote_string",
           "named": true
         },
@@ -1222,6 +1318,10 @@
             "named": true
           },
           {
+            "type": "dispatch_call",
+            "named": true
+          },
+          {
             "type": "enum_literal",
             "named": true
           },
@@ -1231,10 +1331,6 @@
           },
           {
             "type": "index_expression",
-            "named": true
-          },
-          {
-            "type": "member_expression",
             "named": true
           },
           {
@@ -1289,6 +1385,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -1310,6 +1410,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -1354,6 +1458,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -1428,6 +1536,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -1449,6 +1561,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -1489,6 +1605,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -1563,6 +1683,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -1584,6 +1708,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -1624,6 +1752,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -1698,6 +1830,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -1719,6 +1855,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -1759,6 +1899,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -1848,6 +1992,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -1877,6 +2025,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -1921,6 +2073,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -2008,6 +2164,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -2029,6 +2189,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -2069,6 +2233,206 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
+          "named": true
+        },
+        {
+          "type": "single_quote_string",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        },
+        {
+          "type": "struct_literal",
+          "named": true
+        },
+        {
+          "type": "try_expression",
+          "named": true
+        },
+        {
+          "type": "unary_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "dispatch_call",
+    "named": true,
+    "fields": {
+      "method": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "receiver": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "call_expression",
+            "named": true
+          },
+          {
+            "type": "dispatch_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "member_expression",
+            "named": true
+          },
+          {
+            "type": "paren_expression",
+            "named": true
+          },
+          {
+            "type": "self",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "anonymous_function",
+          "named": true
+        },
+        {
+          "type": "array_literal",
+          "named": true
+        },
+        {
+          "type": "await_expression",
+          "named": true
+        },
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "byte_slice",
+          "named": true
+        },
+        {
+          "type": "call_expression",
+          "named": true
+        },
+        {
+          "type": "channel_receive",
+          "named": true
+        },
+        {
+          "type": "channel_send",
+          "named": true
+        },
+        {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
+          "type": "enum_literal",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if_expression",
+          "named": true
+        },
+        {
+          "type": "index_expression",
+          "named": true
+        },
+        {
+          "type": "interpolated_string",
+          "named": true
+        },
+        {
+          "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
+          "named": true
+        },
+        {
+          "type": "match_expression",
+          "named": true
+        },
+        {
+          "type": "member_expression",
+          "named": true
+        },
+        {
+          "type": "named_argument",
+          "named": true
+        },
+        {
+          "type": "nil_coalescing_expression",
+          "named": true
+        },
+        {
+          "type": "null",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "optional_chain",
+          "named": true
+        },
+        {
+          "type": "paren_expression",
+          "named": true
+        },
+        {
+          "type": "propagate_expression",
+          "named": true
+        },
+        {
+          "type": "range_expression",
+          "named": true
+        },
+        {
+          "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -2194,6 +2558,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -2215,6 +2583,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -2255,6 +2627,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -2375,6 +2751,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -2396,6 +2776,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -2436,6 +2820,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -2557,6 +2945,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -2578,6 +2970,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -2618,6 +3014,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -2692,6 +3092,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -2713,6 +3117,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -2753,6 +3161,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -2846,6 +3258,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -2879,6 +3295,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -2927,6 +3347,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -3094,6 +3518,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -3115,6 +3543,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -3155,6 +3587,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -3264,6 +3700,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -3293,6 +3733,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -3341,6 +3785,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -3423,6 +3871,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -3444,6 +3896,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -3484,6 +3940,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -3558,6 +4018,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -3579,6 +4043,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -3619,6 +4087,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -3693,6 +4165,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -3714,6 +4190,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -3754,6 +4234,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -3847,6 +4331,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -3876,6 +4364,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -3923,6 +4415,10 @@
           "named": true
         },
         {
+          "type": "self",
+          "named": true
+        },
+        {
           "type": "single_quote_string",
           "named": true
         },
@@ -3963,6 +4459,153 @@
       "types": [
         {
           "type": "block",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "map_literal",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "anonymous_function",
+          "named": true
+        },
+        {
+          "type": "array_literal",
+          "named": true
+        },
+        {
+          "type": "await_expression",
+          "named": true
+        },
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "byte_slice",
+          "named": true
+        },
+        {
+          "type": "call_expression",
+          "named": true
+        },
+        {
+          "type": "channel_receive",
+          "named": true
+        },
+        {
+          "type": "channel_send",
+          "named": true
+        },
+        {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
+          "type": "enum_literal",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if_expression",
+          "named": true
+        },
+        {
+          "type": "index_expression",
+          "named": true
+        },
+        {
+          "type": "interpolated_string",
+          "named": true
+        },
+        {
+          "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
+          "named": true
+        },
+        {
+          "type": "match_expression",
+          "named": true
+        },
+        {
+          "type": "member_expression",
+          "named": true
+        },
+        {
+          "type": "nil_coalescing_expression",
+          "named": true
+        },
+        {
+          "type": "null",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "optional_chain",
+          "named": true
+        },
+        {
+          "type": "paren_expression",
+          "named": true
+        },
+        {
+          "type": "propagate_expression",
+          "named": true
+        },
+        {
+          "type": "range_expression",
+          "named": true
+        },
+        {
+          "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
+          "named": true
+        },
+        {
+          "type": "single_quote_string",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        },
+        {
+          "type": "struct_literal",
+          "named": true
+        },
+        {
+          "type": "try_expression",
+          "named": true
+        },
+        {
+          "type": "unary_expression",
           "named": true
         }
       ]
@@ -4017,6 +4660,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -4038,6 +4685,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -4078,6 +4729,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -4152,6 +4807,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -4173,6 +4832,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -4217,6 +4880,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -4266,7 +4933,15 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "index_expression",
           "named": true
         },
         {
@@ -4275,6 +4950,10 @@
         },
         {
           "type": "paren_expression",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         }
       ]
@@ -4344,6 +5023,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -4373,6 +5056,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -4417,6 +5104,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -4499,6 +5190,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -4520,6 +5215,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -4560,6 +5259,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -4634,6 +5337,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -4655,6 +5362,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -4695,6 +5406,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -4769,6 +5484,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -4790,6 +5509,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -4830,6 +5553,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -4950,6 +5677,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -4971,6 +5702,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -5011,6 +5746,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -5090,6 +5829,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -5111,6 +5854,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -5151,6 +5898,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -5225,6 +5976,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -5246,6 +6001,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -5286,6 +6045,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -5365,6 +6128,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -5386,6 +6153,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -5429,6 +6200,10 @@
           "named": true
         },
         {
+          "type": "self",
+          "named": true
+        },
+        {
           "type": "single_quote_string",
           "named": true
         },
@@ -5446,6 +6221,32 @@
         },
         {
           "type": "unary_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "schema_definition",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "type_identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "struct_field",
           "named": true
         }
       ]
@@ -5477,11 +6278,11 @@
           "named": true
         },
         {
-          "type": "function_definition",
+          "type": "impl_block",
           "named": true
         },
         {
-          "type": "impl_block",
+          "type": "schema_definition",
           "named": true
         },
         {
@@ -5553,6 +6354,10 @@
         },
         {
           "type": "for_statement",
+          "named": true
+        },
+        {
+          "type": "function_definition",
           "named": true
         },
         {
@@ -5697,6 +6502,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -5730,6 +6539,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -5774,6 +6587,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -5867,6 +6684,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -5888,6 +6709,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -5928,6 +6753,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -6021,6 +6850,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -6042,6 +6875,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -6082,6 +6919,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -6303,6 +7144,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -6324,6 +7169,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -6364,6 +7213,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -6453,6 +7306,10 @@
           "named": true
         },
         {
+          "type": "dispatch_call",
+          "named": true
+        },
+        {
           "type": "enum_literal",
           "named": true
         },
@@ -6474,6 +7331,10 @@
         },
         {
           "type": "lambda_expression",
+          "named": true
+        },
+        {
+          "type": "map_literal",
           "named": true
         },
         {
@@ -6514,6 +7375,10 @@
         },
         {
           "type": "regex_literal",
+          "named": true
+        },
+        {
+          "type": "self",
           "named": true
         },
         {
@@ -6870,6 +7735,14 @@
   {
     "type": "return",
     "named": false
+  },
+  {
+    "type": "schema",
+    "named": false
+  },
+  {
+    "type": "self",
+    "named": true
   },
   {
     "type": "string",

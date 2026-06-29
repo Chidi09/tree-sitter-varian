@@ -8,6 +8,7 @@ module.exports = grammar({
 
   conflicts: ($) => [
     [$.call_expression, $.member_expression],
+    [$.block, $.map_literal],
     [$.type_identifier, $.identifier],
     [$.generic_parameters, $.binary_expression],
     [$.anonymous_function, $.call_expression],
@@ -66,8 +67,8 @@ module.exports = grammar({
     _declaration: ($) =>
       choice(
         $.use_statement,
-        $.function_definition,
         $.struct_definition,
+        $.schema_definition,
         $.enum_definition,
         $.actor_definition,
         $.trait_definition,
@@ -98,6 +99,7 @@ module.exports = grammar({
         $.block,
         $.assert_statement,
         $.comptime_block,
+        $.function_definition,
       ),
 
     expression_statement: ($) => seq($._expression, optional(";")),
@@ -240,6 +242,17 @@ module.exports = grammar({
         "struct",
         field("name", $.type_identifier),
         optional($.generic_parameters),
+        "{",
+        commaSep($.struct_field),
+        "}",
+      ),
+
+    // A `schema Name { field: Type }` declaration. `schema` is consumed ONLY
+    // here, so a bare `schema` elsewhere still parses as a normal identifier.
+    schema_definition: ($) =>
+      seq(
+        "schema",
+        field("name", $.type_identifier),
         "{",
         commaSep($.struct_field),
         "}",
@@ -418,6 +431,7 @@ module.exports = grammar({
     _expression: ($) =>
       choice(
         $.identifier,
+        $.self,
         $.number,
         $.string,
         $.single_quote_string,
@@ -427,6 +441,7 @@ module.exports = grammar({
         $.boolean,
         $.null,
         $.array_literal,
+        $.map_literal,
         $.struct_literal,
         $.enum_literal,
         $.lambda_expression,
@@ -440,6 +455,7 @@ module.exports = grammar({
         $.channel_send,
         $.range_expression,
         $.channel_receive,
+        $.dispatch_call,
         $.call_expression,
         $.member_expression,
         $.index_expression,
@@ -456,7 +472,7 @@ module.exports = grammar({
     string: ($) =>
       seq(
         '"',
-        repeat(choice(token.immediate(prec(1, /[^"\\\{\n]+/)), /\\(.|\n)/)),
+        repeat(choice(token.immediate(prec(1, /[^"\\\n]+/)), /\\(.|\n)/)),
         '"',
       ),
 
@@ -585,6 +601,43 @@ module.exports = grammar({
     // ───────────────────────────────────────────────
     // Call / Member / Index
     // ───────────────────────────────────────────────
+    self: ($) => "self",
+
+    // A method call `recv.method(args)`. Method calls go through this rule (and
+    // NOT call_expression, which no longer accepts a member_expression as its
+    // function), so the highlight query `(dispatch_call method: ...)` resolves.
+    dispatch_call: ($) =>
+      prec(
+        16,
+        seq(
+          field(
+            "receiver",
+            choice(
+              $.identifier,
+              $.self,
+              $.member_expression,
+              $.call_expression,
+              $.dispatch_call,
+              $.index_expression,
+              $.paren_expression,
+            ),
+          ),
+          ".",
+          field("method", $.identifier),
+          "(",
+          commaSep(choice($._expression, $.named_argument)),
+          ")",
+        ),
+      ),
+
+    map_literal: ($) =>
+      seq(
+        "{",
+        commaSep(seq(choice($.identifier, $.string), ":", $._expression)),
+        optional(","),
+        "}",
+      ),
+
     call_expression: ($) =>
       prec(
         14,
@@ -593,10 +646,10 @@ module.exports = grammar({
             "function",
             choice(
               $.identifier,
-              $.member_expression,
               $.enum_literal,
               $.index_expression,
               $.call_expression,
+              $.dispatch_call,
               $.paren_expression,
             ),
           ),
@@ -614,8 +667,11 @@ module.exports = grammar({
         seq(
           choice(
             $.identifier,
+            $.self,
             $.member_expression,
             $.call_expression,
+            $.dispatch_call,
+            $.index_expression,
             $.paren_expression,
           ),
           ".",
@@ -627,7 +683,14 @@ module.exports = grammar({
       prec(
         14,
         seq(
-          choice($.identifier, $.member_expression, $.paren_expression),
+          choice(
+            $.identifier,
+            $.self,
+            $.member_expression,
+            $.call_expression,
+            $.dispatch_call,
+            $.paren_expression,
+          ),
           "[",
           $._expression,
           "]",
